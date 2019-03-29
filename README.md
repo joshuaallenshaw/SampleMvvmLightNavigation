@@ -1,3 +1,3 @@
-https://stackoverflow.com/questions/28966819/mvvm-light-5-0-how-to-use-the-navigation-service/
+### Example NavigationService with MVVMLight for WPF
 
-#WTFPL licence
+There is nothing wrong with SamTheDev's original example.  Actually, it's an excellent example, but I preferred to define my pages with Enums. 
