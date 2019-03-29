@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Chargily.Properties
+namespace SampleNavigationMvvmLight.Properties
 {
     using System;
 

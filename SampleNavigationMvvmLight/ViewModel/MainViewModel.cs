@@ -1,14 +1,19 @@
 ﻿using GalaSoft.MvvmLight;
-using System.Windows.Input;
 using GalaSoft.MvvmLight.Command;
-using Chargily.Helpers;
+using SampleNavigationMvvmLight.View;
 
-namespace Chargily.ViewModel
+namespace SampleNavigationMvvmLight.ViewModel
 {
     public class MainViewModel : ViewModelBase
     {
-        private IFrameNavigationService _navigationService;
-        private RelayCommand _loadedCommand;            
+        private RelayCommand _loadedCommand;
+        private INavigationService<NavigationPage> _navigationService;
+
+        public MainViewModel(INavigationService<NavigationPage> navigationService)
+        {
+            _navigationService = navigationService;
+        }
+
         public RelayCommand LoadedCommand
         {
             get
@@ -20,11 +25,6 @@ namespace Chargily.ViewModel
                         _navigationService.NavigateTo("Home");
                     }));
             }
-        }
-
-        public MainViewModel(IFrameNavigationService navigationService)
-        {
-            _navigationService = navigationService;
         }
     }
 }

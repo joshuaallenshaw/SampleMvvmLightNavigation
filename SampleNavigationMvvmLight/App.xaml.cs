@@ -1,7 +1,7 @@
-﻿using System.Windows;
-using GalaSoft.MvvmLight.Threading;
+﻿using GalaSoft.MvvmLight.Threading;
+using System.Windows;
 
-namespace Chargily
+namespace SampleNavigationMvvmLight
 {
     /// <summary>
     /// Interaction logic for App.xaml
